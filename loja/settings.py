@@ -42,9 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # TODO: Remover'
-    'debug_toolbar',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -57,9 +54,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
-    # TODO: Remover
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'loja.urls'
@@ -163,10 +157,3 @@ SESSION_SAVE_EVERY_REQUEST = False
 # Para sessions em arquivos ao invés da base de dados
 # SESSION_ENGINE = "django.contrib.sessions.backends.file"
 # SESSION_FILE_PATH = '/home/luizotavio/Desktop/temp'
-
-# TODO: REMOVER
-INTERNAL_IPS = [
-    # ...
-    '127.0.0.1',
-    # ...
-]
